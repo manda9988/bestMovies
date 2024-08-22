@@ -25,7 +25,7 @@ const movies = [
     releaseDate: "28 juin 2024 | 2h 58min",
     genre: "Aventure, Historique",
     director: "Matthieu Delaporte, Alexandre De La Patellière",
-    cast: "Pierre Niney, Bastien Bouillon, Anaïs Demoustier",
+    cast: "Pierre Niney, Bastien Boullon, Anaïs Demoustier",
   },
 
   {
