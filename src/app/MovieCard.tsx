@@ -13,7 +13,7 @@ interface Movie {
 
 export default function MovieCard({ movie }: { movie: Movie }) {
   return (
-    <div className="flex bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="flex bg-gray-200 shadow-md rounded-lg overflow-hidden">
       {/* Utilisation du ratio 3:4 pour l'image */}
       <div className="w-[35%] rounded-md overflow-hidden relative">
         <img

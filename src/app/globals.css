@@ -6,5 +6,5 @@
 
 /* Styles personnalisés ici */
 body {
-  @apply bg-gray-100 text-gray-800;
+  @apply bg-gray-200 text-gray-800;
 }
