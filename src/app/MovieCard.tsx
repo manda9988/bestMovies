@@ -8,25 +8,34 @@ interface Movie {
   genre: string;
   director: string;
   cast: string;
+  imageUrl: string;
 }
 
 export default function MovieCard({ movie }: { movie: Movie }) {
   return (
     <div className="flex bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="w-1/4 bg-black h-full flex items-center justify-center">
-        <div className="w-full h-48"></div>
+      {/* Utilisation du ratio 3:4 pour l'image */}
+      <div className="w-[35%] rounded-md overflow-hidden relative">
+        <img
+          src={movie.imageUrl}
+          alt={movie.title}
+          className="absolute top-0 w-full h-auto max-h-full object-cover rounded-md"
+        />
+        <div className="pt-[133.33%]"></div> {/* Maintien du ratio 3:4 */}
       </div>
 
-      <div className="w-3/4 p-4">
-        <h2 className="text-2xl font-semibold mb-2">{movie.title}</h2>
-        <p className="text-gray-500 mb-2">
-          {movie.releaseDate} | {movie.genre}
+      <div className="w-[65%] p-4 pt-1">
+        <h2 className="text-2xl font-bold mb-2">{movie.title}</h2>
+        <p className="text-gray-500 mb-2 font-normal">
+          {movie.releaseDate} |{" "}
+          <span className=" text-gray-800 font-semibold">{movie.genre}</span>
         </p>
-        <p className="text-gray-700 mb-2">
-          De <span className="font-semibold">{movie.director}</span>
+        <p className="text-gray-500 mb-2 font-normal">
+          De{" "}
+          <span className="text-gray-800 font-semibold">{movie.director}</span>
         </p>
-        <p className="text-gray-700">
-          Avec <span className="font-semibold">{movie.cast}</span>
+        <p className="text-gray-500 mb-2 font-normal">
+          Avec <span className="text-gray-800 font-semibold">{movie.cast}</span>
         </p>
       </div>
     </div>
