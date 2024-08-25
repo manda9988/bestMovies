@@ -34,7 +34,7 @@ const movies = [
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto px-4 py-8 w-[95vw] max-w-[600px]">
+    <main className="container mx-auto px-4 py-8 max-w-[600px]">
       <div className="space-y-8">
         {movies.map((movie, index) => (
           <MovieCard key={index} movie={movie} />

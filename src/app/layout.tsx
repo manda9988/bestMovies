@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen overflow-x-hidden">
         <header className="header-footer">
           <h1 className="text-2xl font-bold">BestMovies</h1>
         </header>
