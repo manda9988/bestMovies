@@ -16,11 +16,11 @@ export default function Layout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="flex flex-col min-h-screen">
-        <header>
+        <header className="header-footer">
           <h1 className="text-2xl font-bold">BestMovies</h1>
         </header>
         <main>{children}</main>
-        <footer>
+        <footer className="header-footer">
           <p>&copy; 2024 BestMovies. Tous droits réservés.</p>
         </footer>
       </body>
